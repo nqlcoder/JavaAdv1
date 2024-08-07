@@ -31,7 +31,7 @@ public class TuyenSinh {
 //            return lstStore.stream().filter((s) -> s instanceof ThiSinhKhoiC).collect(Collectors.toList());
 //        }
 //        else return null;
-
+//        else return null;
         return this.lstStore.stream().filter((s) -> s.GetKhoiThi().equalsIgnoreCase(khoi)).
                 sorted(Comparator.comparingDouble(s -> s.TongDiem())).collect(Collectors.toList()).reversed();
     }
